@@ -1,0 +1,240 @@
+body {
+	background-color: rgb(240, 242, 245) !important;
+}
+
+/* OVERRIDE BROWSER RULES */
+ul {
+	list-style-type: none;
+	margin-bottom: 0 !important;
+}
+
+/* UTILITIES */
+.clearfix::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.flex-item {
+	align-items: center;
+	display: flex !important;
+}
+.left-item {
+	float:left;
+}
+.dynamicImg {
+	background-image: url(https://static.xx.fbcdn.net/rsrc.php/v3/y1/r/oxG_P89_MA2.png);
+  background-size: auto;
+  background-repeat: no-repeat;
+  display: inline-block;
+  height: 24px;
+  width: 24px;
+}
+/* js utility  */
+.not-displayable {
+	display:none !important;
+}
+
+/*  RULES */
+
+/* START HEADER */
+#header .navbar {
+	background-color: white;
+	height: 60px;
+}
+
+/* contenitore logo */
+#header .navbar-brand {
+	height:100%;
+	padding: 0;
+}
+#header .navbar-brand img{
+	border-radius: 50%;
+	height: 100%;
+	margin-right: 5px;
+	width: 45px;
+}
+#header .navbar-brand input{
+	border: none;
+	background-color: rgb(240, 242, 245);
+	border-radius: 20px;
+	display: inline-block;
+	height: 40px;
+  padding: 20px;
+}
+
+#header .navbar_centrale ul li {
+	position: relative;
+	text-align: center;
+	width: 120px;
+}
+#header .navbar_centrale li .filler {
+	color:rgb(56, 88, 152);
+	fill:rgb(101, 103, 107);
+}
+#header .navbar_centrale li.active .filler {
+	fill:rgb(24, 119, 242);
+}
+#header .navbar_centrale li.active:after {
+	content: '';
+	bottom: -17px;
+	background-color:rgb(24, 119, 242);
+	height: 2px;
+	left: 0;
+  position: absolute;
+	width:100%;
+}
+
+#header .navbar-right .buttons .button {
+	background-color: rgb(240, 242, 245);
+  border-radius: 20px;
+  height: 40px;
+	justify-content: center;
+  margin-right: 5px;
+  padding: 5px;
+	width: 40px;
+}
+#header .navbar-right .buttons .button i {
+	font-size: 18px;
+}
+/* END HEADER */
+
+/* START MAIN */
+.main {
+	padding-top: 80px;
+}
+.main .sidebar {
+	width:25%;
+}
+
+.main .sidebar-left ul {
+	list-style-type: none;
+}
+.main .sidebar-left ul li {
+	margin-bottom: 10px;
+}
+.main .sidebar-left ul li img {
+	margin-right: 10px;
+	width:40px;
+}
+.main .sidebar-left ul li #sidebarUserImg {
+	border-radius: 50%;
+}
+.main .sidebar-left ul li i {
+	background-color: #e4e6eb;
+	border-radius:20px;
+	height: 40px;
+	justify-content: center;
+	margin-right: 10px;
+	padding:5px;
+	width: 40px;
+}
+
+.main .posts {
+	margin: 0 auto 20px;
+	padding: 0 4%;
+	width: 50%;
+}
+
+/* PROFILE NEW POST */
+.posts .mypost {
+	background-color:white;
+	border-radius:4px;
+	padding: 10px;
+}
+.posts .mypost .status {
+	border-bottom: 1px solid #efefef;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+}
+.posts .mypost img {
+	border-radius: 32px;
+	height:50px;
+	width: 55px;
+}
+.posts .mypost #inputPost {
+	border: none;
+  background-color: rgb(240, 242, 245);
+  border-radius: 20px;
+	height: 45px;
+  padding: 20px;
+	width: calc(100% - 70px);
+}
+.posts .mypost #inputPost:hover, .posts .mypost #inputPost:focus {
+	background-color: rgb(222 225 230);
+	outline: none;
+}
+.posts #addPost {
+	border-radius:10px;
+	font-size:14px;
+	margin-left:5px;
+	text-transform: uppercase;
+}
+.posts .mypost .reactions .reaction {
+	width: 30%;
+	margin:0 1.5%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 5px 0;
+}
+.posts .mypost .reactions .reaction span {
+	margin-left: 10px;
+	font-size:13px;
+}
+
+/* POSTS LIST */
+.post {
+	border-radius:4px;
+	margin:20px 0;
+	width:100%;
+}
+.post .card-body {
+	padding: 1.25rem 1.25rem .5rem;
+}
+/* image container */
+.post .card-title {
+	display: flex;
+	align-items:center;
+}
+.post .card-title .imgCnt {
+	width:40px;
+	height:40px;
+	border-radius: 20px;
+	overflow: hidden;
+	margin-right:15px;
+}
+.post .card-title .imgCnt img {
+	height: 100%;
+}
+.post .card-title h1 {
+	font-size: 16px;
+	margin-bottom:2px;
+}
+.post .card-title p {
+	font-size:12px;
+	margin-bottom:0;
+}
+.post .post-image {
+	max-height: 350px;
+	overflow: hidden;
+}
+.post .card-footer {
+	background-color: white;
+	padding:5px;
+}
+.post .card-footer .reactions {
+	justify-content: space-between;
+	padding: 5px 10px 10px;
+}
+.post .card-footer .reactions .emoji img {
+	height: 15px;
+}
+.post .card-footer .actions {
+	justify-content: center;
+  margin: 10px 0 5px;
+}
+.post .card-footer .actions div {
+	margin:0 1.5%;
+	text-align: center;
+	width:30%;
+}
